@@ -20,7 +20,7 @@ Abra o Copilot Chat (`Ctrl+Alt+I`) e chame `@tarefas`:
 | `/listar` | Lista todas as tarefas | `@tarefas /listar` |
 | `/concluir` | Marca como concluída | `@tarefas /concluir Revisar PR` |
 | `/excluir` | Remove uma tarefa | `@tarefas /excluir Reunião` |
-| `/analisar` | Análise com IA 🤖 | `@tarefas /analisar` |
+| `/analisar` | Análise com IA  | `@tarefas /analisar` |
 
 ### Prioridades
 
