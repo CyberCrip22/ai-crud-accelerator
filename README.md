@@ -79,10 +79,3 @@ O comando `/analisar` usa a **Language Model API** do VS Code para chamar o mode
 2. Foco recomendado com justificativa
 3. Dica prática de produtividade
 
-## Publicação no Marketplace
-
-```bash
-npm install -g @vscode/vsce
-vsce package       # gera o .vsix
-vsce publish       # publica (requer conta no Marketplace)
-```
