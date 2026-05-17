@@ -1,0 +1,43 @@
+{
+  "name": "todo-copilot",
+  "displayName": "Tarefas para GitHub Copilot",
+  "description": "Gerencie tarefas e gere CRUDs com IA diretamente no Copilot Chat com @tarefas",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.90.0" },
+  "categories": ["AI", "Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "extensionDependencies": [
+    "github.copilot",
+    "github.copilot-chat"
+  ],
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "todo-copilot.tarefas",
+        "name": "tarefas",
+        "fullName": "Gerenciador de Tarefas e CRUD com IA",
+        "description": "Gerencie suas tarefas com IA. Use /nova, /listar, /concluir, /excluir, /analisar, /crud",
+        "isSticky": true,
+        "commands": [
+          { "name": "nova",     "description": "Adiciona uma nova tarefa" },
+          { "name": "listar",   "description": "Lista todas as tarefas" },
+          { "name": "concluir", "description": "Marca uma tarefa como concluída" },
+          { "name": "excluir",  "description": "Remove uma tarefa" },
+          { "name": "analisar", "description": "Analisa suas tarefas com IA e dá sugestões" },
+          { "name": "crud",     "description": "🤖 Gera um CRUD completo com IA (REST + testes + docs)" }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
